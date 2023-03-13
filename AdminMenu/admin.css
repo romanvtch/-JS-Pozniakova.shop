@@ -1,0 +1,52 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+body{
+    background: var(--gold);
+    padding: var(--spacing-medium);
+}
+.container-form{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    /*margin-top: 20%;*/
+}
+.myForm{
+    display: flex;
+    flex-direction: column;
+}
+label{
+    color: var(--light);
+    font-size: 20px;
+    text-shadow: 1px 1px 1px var(--dark);
+}
+#name, #img{
+    font-size: 24px;
+    border-radius: 40px;
+    border: none;
+    outline: none;
+    height: 40px;
+    width: 320px;
+    padding: 5px 20px;
+}
+#button{
+    cursor: pointer;
+    color: var(--light);
+    font-size: 16px;
+    font-weight: 700;
+    border: 2px solid var(--light);
+    background: var(--rainbox-bg);
+    margin-top: var(--spacing-small);
+    border-radius: 40px;
+    padding: var(--spacing-small);
+}
+.site a{
+    text-decoration: none;
+    color: var(--light);
+    font-size: 18px;
+    font-weight: 700;
+    padding: 0 30px;
+    text-shadow: 1px 1px 1px var(--dark);
+}

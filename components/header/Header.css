@@ -1,0 +1,240 @@
+.header-container {
+    background-color: var(--gold);
+
+}
+
+.header-container__box{
+    font-family: 'Avenir';
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0px var(--spacing-medium);
+    height: 70px;
+    width: 100%;
+    max-width: 1440px;
+    margin: 0 auto;
+    background-color:  var(--gold);
+    border-bottom: 2.5px solid var(--light);
+}
+
+.header-logo {
+    display: flex;
+    align-items: center;
+}
+
+.header-logo img {
+    cursor: pointer;
+    max-height: 32px;
+    padding-right: 5px;
+    
+}
+
+.header-logo p {
+    cursor: pointer;
+    font-size: 32px;
+    color: var(--brawn);
+    text-shadow: 1px 1px 1px #734b46;
+    font-weight: 900;
+    font-variant: all-small-caps;
+}
+
+.header-navbar {}
+
+.navbar-element__ul {
+    display: flex;
+}
+
+.navbar-element__ul li {
+    margin-right: 40px;
+    list-style: none;
+}
+
+.navbar-element__ul a {
+    font-weight: 850;
+    font-size: 22px;
+    color: var(--light);
+    text-shadow: 1px 1px 1px #734b46;
+    text-decoration: none;
+    transition: 0.3s;
+}
+.navbar-element__ul a:hover{
+    color: var(--brawn);
+}
+
+.header-search {
+    display: flex;
+    align-items: center;
+}
+
+.header-search i {
+    cursor: pointer;
+    font-size: 30px;
+    padding: 4px;
+    background: var(--light);
+    border-radius: 40px 0px 0px 40px;   
+}
+
+.header-search input {
+    gap: 10px;
+    width: 296.49px;
+    height: 38px;
+    border: none;
+    outline: none;
+    font-size: 18px;
+    background: var(--light);
+    box-shadow: 6px 6px 50px rgba(55, 55, 55, 0.25);
+    border-radius: 0px 40px 40px 0px;
+    transition:all 0.3s ;
+    
+}
+
+.header-icon i{
+    font-size: 28px;
+    padding-left: 5px;
+    color: var(--light);
+    text-shadow: 1px 1px 1px #734b46;
+    transition: 0.3s;
+}
+.header-icon i:hover{
+    cursor: pointer;
+    color: var(--brawn);
+}
+
+
+
+.header-container__menu {
+    display: none;
+    cursor: pointer;
+}
+
+.bar1,
+.bar2,
+.bar3 {
+    width: 35px;
+    height: 5px;
+    background-color: var(--brawn);
+    text-shadow: 1px 1px 1px #734b46;
+    margin: 6px 0;
+    transition: 0.4s;
+    margin-right: var(--spacing-smal);
+    
+}
+
+.change .bar1 {
+    -webkit-transform: rotate(-45deg) translate(-9px, 6px);
+    transform: rotate(-45deg) translate(-9px, 6px);
+}
+
+.change .bar2 {
+    opacity: 0;
+}
+
+.change .bar3 {
+    -webkit-transform: rotate(45deg) translate(-8px, -8px);
+    transform: rotate(45deg) translate(-8px, -8px);
+}
+
+.header-container__bg{
+    position: absolute;
+    top: 70px;
+    left: 0;
+    display: none;
+    height: 150px;
+    width: 100%;;
+    border-bottom:2px solid var(--light);
+    background: var(--brawn);
+    z-index: 1;
+}
+
+.header-container__bg .navbar-element__ul{
+    display: flex;
+    flex-direction: column;
+    padding: var(--spacing-small);
+}
+.header-container__bg .navbar-element__ul li{
+    margin-bottom: 5px;
+}
+@media (max-width: 1200px) {
+    .header-search {
+        display: none;
+        /*position: absolute;*/
+        /*top: 200px;*/
+        /*left: -100%;*/
+        
+    }
+}
+
+/* Portrait tablets and medium desktops */
+@media (max-width: 992px) {}
+
+/* Portrait tablets and small desktops */
+@media(max-width:824px){
+    .header-container__box{
+        padding: 0px var(--spacing-small);
+    }
+    .header-container__menu {
+        display: inline-block;
+    }
+    .header-navbar{
+        display: none;
+    }
+    .navbar-element__ul a:hover{
+        color: var(--light);
+    }
+    .header-icon .bxl-instagram{
+        display: none;
+    }
+    .header-icon .bx-phone-call{
+        display: block;
+        position: fixed;
+        bottom: 20px;
+        right: 15px;
+        height: 40px;
+        width: 40px;
+        padding: 5px;
+        border-radius: 50%;
+        background-color: var(--brawn);
+        z-index: 1;
+    }
+    .header-search.active{
+        display: flex;
+        position: absolute;
+        /* border-radius:0px; */
+        left: 10px;
+        top: 170px;
+        /* border: 2px solid var(--brawn); */
+        z-index: 2;
+        transition: all 0.3s;
+        
+
+    }
+    .header-search input{
+        /* border-radius: 0px; */
+        max-width: 250px;
+        width: 100%;
+        
+    }
+    .header-container__bg.active{
+        display: block;
+    }
+    .header-search.active{
+        display: flex;
+    }
+
+
+}
+@media (max-width: 768px) {
+
+
+   
+
+
+
+
+}
+
+/* Landscape phones and smaller */
+@media (max-width: 480px) {}
+
+/* Small phones */
+@media (max-width:320px) {}
